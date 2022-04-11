@@ -1,0 +1,23 @@
+@import 'variables';
+
+@mixin defaultHtml() {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /** dimensions **/
+  @mixin setHeight($height) {
+    min-height: $height;
+    height: $height;
+    max-height: $height;
+  }
+  
+  @mixin setWidth($width) {
+    min-width: $width;
+    width: $width;
+    max-width: $width;
+  }
+  

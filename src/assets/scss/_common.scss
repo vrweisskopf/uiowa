@@ -1,0 +1,16 @@
+@import 'mixins';
+@import 'variables';
+
+html, 
+body { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0;   
+    padding: 0;     
+    //font-family: ;
+    //font-size: variables.$default-font-size; // clamp(16px, 1.5vw, 1rem); 
+    //line-height: variables.$default-line-height; // clamp(16px, 1.5vw, 1rem); 
+}
+body { 
+    margin: 0; 
+}

@@ -1,0 +1,52 @@
+/***** Default Colors *****/
+$light: white;
+$dark: black;
+$hawkeye-gold: #ffcd00;
+
+/***** CSI colors *****/
+$csi-red: #b70000;
+$csi-green: #00bb00;
+$csi-blue: #428bca;
+$csi-gray: #888888;
+$lighten-by: 10%;
+$darken-by: 10%;
+$csi-light-gold: #fff7d2;
+
+$csi-light-red: lighten($csi-red, $lighten-by);
+$csi-light-green: lighten($csi-green, $lighten-by);
+$csi-light-blue: lighten($csi-blue, $lighten-by * 1.5); // the difference with light blue at 10% isn't that noticable
+
+$csi-dark-red: darken($csi-red, $darken-by);
+$csi-dark-green: darken($csi-green, $darken-by);
+$csi-dark-blue: darken($csi-blue, $darken-by);
+
+$lightest-gray : lighten($csi-gray, $lighten-by * 3);
+$lighter-gray : lighten($csi-gray, $lighten-by * 2);
+$light-gray : lighten($csi-gray, $lighten-by * 1.5);
+$barely-lighter-gray : lighten($csi-gray, $lighten-by);
+
+$barely-darker-gray : darken($csi-gray, $darken-by);
+$dark-gray : darken($csi-gray, $darken-by * 1.5);
+$darker-gray : darken($csi-gray, $darken-by * 2);
+$darkest-gray : darken($csi-gray, $darken-by * 3);
+
+$csi-medium-gold: #ffe15c;
+
+// $csi-light-blue: #75baff;
+// $csi-dark-green: #3d9400;
+// $csi-dark-gray: darken($dark, $lighten-by * 2);
+// $csi-medium-gray: #8f8f8f;
+// $cs-medium-gray: #aaaaaa;
+// $csi-light-gray: #d8d8d8;
+// $csi-lighter-gray: #f0f0f0;
+
+
+/***** UI Sanctioned Palette *****/
+$dark-orange: #e35205;
+$dark-green: #00664f;
+$dark-blue: #0055bc;
+$dark-cool-gray: #63666a;
+$light-orange: #ff8200;
+$light-green: #00c389;
+$light-blue: #00a9e0;
+$light-cool-gray: #bbbcbc;

@@ -1,0 +1,11 @@
+@import '../../../../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+// $fsl-app-primary: mat-palette($mat-gray);
+// $fsl-app-accent: mat-palette($mat-yellow);
+// $fsl-app-warn: mat-palette($mat-gray);
+
+// $fsl-app-theme: mat-light-theme($fsl-app-primary, $fsl-app-accent, $fsl-app-warn);
+
+// @include angular-material-theme($fsl-app-theme);
