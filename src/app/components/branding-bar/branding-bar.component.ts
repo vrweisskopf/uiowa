@@ -14,7 +14,7 @@ export class BrandingBarComponent implements OnInit {
   }
 
   public get siteName(): string {
-    return 'WorkSpace';
+    return 'Vanessa Weisskopf';
   }
 
   public intro(): void {

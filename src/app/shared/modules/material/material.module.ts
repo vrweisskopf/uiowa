@@ -13,7 +13,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 // import {MatBadgeModule} from '@angular/material/badge';
 // import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
-// import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 // import {MatChipsModule} from '@angular/material/chips';
@@ -21,7 +21,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 // import {MatDatepickerModule} from '@angular/material/datepicker';
 // import {MatDialogModule} from '@angular/material/dialog';
 import {MatDividerModule} from '@angular/material/divider';
-// import {MatExpansionModule} from '@angular/material/expansion';
+import {MatExpansionModule} from '@angular/material/expansion';
 // import {MatGridListModule} from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
@@ -58,7 +58,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     // MatBadgeModule,
     // MatBottomSheetModule,
     MatButtonModule,
-    // MatButtonToggleModule,
+    MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
     // MatChipsModule,
@@ -66,7 +66,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     // MatDatepickerModule,
     // MatDialogModule,
     MatDividerModule,
-    // MatExpansionModule,
+    MatExpansionModule,
     // MatGridListModule,
     MatIconModule,
     MatInputModule,
@@ -104,7 +104,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     // MatBadgeModule,
     // MatBottomSheetModule,
     MatButtonModule,
-    // MatButtonToggleModule,
+    MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
     // MatChipsModule,
@@ -112,7 +112,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     // MatDatepickerModule,
     // MatDialogModule,
     MatDividerModule,
-    // MatExpansionModule,
+    MatExpansionModule,
     // MatGridListModule,
     MatIconModule,
     MatInputModule,

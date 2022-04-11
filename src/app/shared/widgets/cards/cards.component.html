@@ -1,0 +1,34 @@
+ <!-- Faculty Events -->
+ <section style="--flow-space: 5rem" class="event-categories">
+  <div class="card-list" fxLayout="row wrap" fxLayoutAlign="center" fxLayoutAlign.gt-xs="space-between stretch">
+    <mat-card fxLayout="column" fxFlex *ngFor="let kv of employeeDates">
+          <mat-card-header>
+            <mat-card-title class="card-title" fxLayout="row" fxLayoutAlign="center center">{{ kv.label }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content fxFlex>   
+            <p class="row-centered" style="min-height: 70px;">
+              {{ kv.helpText }}
+            </p>      
+            <div class="flow" fxLayout="column" fxLayoutAlign="space-between start">
+              <div style="--flow-space: 0rem; width: 100%">Schedule As</div>
+              <mat-button-toggle-group style="--flow-space: .5rem; width: 100%" name="allDayBusinessHours" aria-label="Font Style" fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-button-toggle>All Day</mat-button-toggle>
+                <mat-button-toggle>Business Hours</mat-button-toggle>
+                <mat-button-toggle>Hide</mat-button-toggle>
+              </mat-button-toggle-group>
+              <div style="--flow-space: 2rem; width: 100%">Show As</div>
+              <div style="--flow-space: .5rem; width: 100%">
+                <div class="button r" id="button-1">
+                  <input type="checkbox" class="checkbox">
+                  <div class="knobs"></div>
+                  <div class="layer"></div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions fxLayout="row" fxLayoutAlign="space-around center">
+            <button class="btn-full-width" mat-raised-button>View Individual Events</button>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+  </section>  

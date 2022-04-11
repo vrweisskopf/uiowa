@@ -1,0 +1,39 @@
+<section class="container" fxLayout="column">
+    <h2>Career Experience</h2>
+    <div class="accordian-expansion">
+        <div class="example-action-buttons mb-3" fxLayout="row" fxLayoutAlign="end center">
+            <button mat-flat-button class="mr-3" (click)="accordion.openAll()">Expand All</button>
+            <button mat-flat-button (click)="accordion.closeAll()">Collapse All</button>
+        </div>
+        <mat-accordion class="example-headers-align" multi>
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    What were the changes to your job when you were promoted from PIA2 to PIA3?
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>While working as a PIA2 I was performing the Key Areas of Responsibility, Universal and Technical Competencies of a PIA3. I worked with one on one with customers on projects such as Dance Marathon (Division of Student Life), OASIS (College of Nursing), Radiology Consultants (College of Dentistry), CorTrack (Presidents Office), and HawkIdeas (Division of Student Life) to define their requirements and outline solutions. I would keep communication with the customer about progress made through the life cycle of the projects. I had the opportunity to work with two student interns which gave me the opportunity to provide technical support, constructive feedback, and mentoring.</p>
+                <p>Redesigning new UI/UX frontend and maintaining legacy applications has always been a part of my role. I have done complete redesigns for projects such as Chinese Reading (College of Liberal Arts & Sciences), Calendar Combiner (ITS), Career Center Graduation Survey (Pomerantz Career Center). My main responsibility was identifying work processes and operations and providing solutions for an improved user experience. Working as a PIA2 and performing the skills needed to advance my role as a PIA3 made it be a simple transition giving me more opportunity grow.</p>
+                <p>After becoming a PIA3 I took on additional work performing project management tasks at a higher level by being involved with writing MOU’s (Memo of Understanding), implementing an Agile structure to fit within the model of our development process, and growing my leadership skills through the BUILD program. I took my experience in fontend design and development and built upon them towards learning more about other areas of development such as Angular and TypeScript. I since have done more IT community involvement on campus. I have communicated and worked with the OSC on their progress with SiteNow, became more involved with the Women in Technology group. I have also formed a space for developers in CSI to be able to a focus on frontend design and development best practices for UI/UX. My experience thus far as a PIA3 in the role as Senior Application Developer has been fulfilling and rewarding.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Do you have interest in becoming a full stack developer or are you content to stay on the frontend?
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Becoming a full stack developer is one main goal of mine. The reason I have set this goal is so that I can be a well-rounded developer and provide more support and value for the team I’m working with. By acquiring the skills of a full stack developer, I believe I will be able to have a better understanding for both sides of develop and blend them together to create richer applications.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Where would you choose to spend your development time in this new position, right now?  
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>At this time, I would see my time spent doing frontend development. However, my plan is to first become proficient in Angular and TypeScript on the frontend, which I am currently in progress of working towards and would like to continue doing so. From there I plan to move forward with learning more about backend development. Depending on where my current work technology stack is at that point, I will then decide if I want to move in the direction of .Net, Java or PHP as well as touching on database management systems such as MS SQL. My preference would be to stay with .Net development.</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</section>

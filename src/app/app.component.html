@@ -3,4 +3,63 @@
   <app-branding-bar></app-branding-bar>
 </div>
 
-<router-outlet></router-outlet>
+<!-- T0-DO: move toolbar & sidenav to separate component. -->
+<mat-toolbar *ngIf="sidenav.mode === 'over'">
+  <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+  </button>
+</mat-toolbar>        
+<mat-sidenav-container>
+  <mat-sidenav class="mat-elevation-z8">
+    <div>
+      <img class="avatar mat-elevation-z8" src="../../../assets/images/vanessa-profile.jpg" />
+
+      <h4 class="name">Vanessa Weisskopf</h4>
+      <p class="designation">Senior Application Developer</p>
+    </div>
+
+    <mat-divider></mat-divider>
+
+      <mat-list>
+        <mat-list-item>
+            <a mat-button class="menu-button" routerLink="/dashboard">
+              <mat-icon>developer_board</mat-icon>Components
+            </a>
+        </mat-list-item>
+        <mat-list-item>
+            <a mat-button class="menu-button" routerLink="/project-requirements">
+              <mat-icon>text_snippet</mat-icon>Requirements
+            </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a mat-button class="menu-button" routerLink="/documentation">
+            <mat-icon>folder</mat-icon>Documentation
+          </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a mat-button class="menu-button" routerLink="/experience">
+              <mat-icon>star</mat-icon>Experience
+          </a>
+        </mat-list-item>
+      </mat-list>
+
+      <mat-divider></mat-divider>
+
+      <mat-list>
+        <mat-list-item>
+          <a mat-button class="menu-button" routerLink="/contact">
+              <mat-icon>person</mat-icon>Contact
+          </a>
+        </mat-list-item>
+      </mat-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
