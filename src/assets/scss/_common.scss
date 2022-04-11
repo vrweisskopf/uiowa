@@ -1,6 +1,13 @@
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
 
+/* Global Styles
+-------------------------------------- */
+.offscreen {
+    position: absolute;
+    overflow: hidden;
+    left: -999px;
+}
 html, 
 body { 
     height: 100%; 
@@ -14,9 +21,148 @@ body {
 body { 
     margin: 0; 
 }
+p {
+    margin: 0;
+    font-size: 16px;
+    color: $dark;
+}
 
-.offscreen {
-    position: absolute;
-    overflow: hidden;
-    left: -999px;
-  }
+
+$spacer: 1rem !default;
+
+/* Margin Top */
+.mt-0 {
+    margin-top: 0 !important;
+}
+.mt-1 {
+    margin-top: ($spacer * .25) !important;
+}
+.mt-2 {
+    margin-top: ($spacer * .5) !important;
+}
+.mt-3 {
+    margin-top: ($spacer * .75) !important;
+}
+.mt-4 {
+    margin-top: ($spacer * 1) !important;
+}
+.mt-5 {
+    margin-top: ($spacer * 1.25) !important;
+}
+
+/* Margin Right */
+.mr-0 {
+    margin-right: 0 !important;
+}
+.mr-1 {
+    margin-right: ($spacer * .25) !important;
+}
+.mr-2 {
+    margin-right: ($spacer * .5) !important;
+}
+.mr-3 {
+    margin-right: ($spacer * .75) !important;
+}
+.mr-4 {
+    margin-right: ($spacer * 1) !important;
+}
+.mr-5 {
+    margin-right: ($spacer * 1.25) !important;
+}
+
+/* Margin Bottom */
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.mb-1 {
+    margin-bottom: ($spacer * .25) !important;
+}
+.mb-2 {
+    margin-bottom: ($spacer * .5) !important;
+}
+.mb-3 {
+    margin-bottom: ($spacer * .75) !important;
+}
+.mb-4 {
+    margin-bottom: ($spacer * 1) !important;
+}
+.mb-5 {
+    margin-bottom: ($spacer * 1.25) !important;
+}
+
+/* Margin Left */
+.ml-0 {
+    margin-left: 0 !important;
+}
+.ml-1 {
+    margin-left: ($spacer * .25) !important;
+}
+.ml-2 {
+    margin-left: ($spacer * .5) !important;
+}
+.ml-3 {
+    margin-left: ($spacer * .75) !important;
+}
+.ml-4 {
+    margin-left: ($spacer * 1) !important;
+}
+.ml-5 {
+    margin-left: ($spacer * 1.25) !important;
+}
+
+/* Margin Left & Right */
+.mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.mx-1 {
+    margin-left: ($spacer * .25) !important;
+    margin-right: ($spacer * .25) !important;
+}
+.mx-2 {
+    margin-left: ($spacer * .5) !important;
+    margin-right: ($spacer * .5) !important;
+}
+.mx-3 {
+    margin-left: ($spacer * .75) !important;
+    margin-right: ($spacer * .75) !important;
+}
+.mx-4 {
+    margin-left: ($spacer * 1) !important;
+    margin-right: ($spacer * 1) !important;
+}
+.mx-5 {
+    margin-left: ($spacer * 1.25) !important;
+    margin-right: ($spacer * 1.25) !important;
+}
+
+/* Margin Top & Bottom */
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.my-1 {
+    margin-top: ($spacer * .25) !important;
+    margin-bottom: ($spacer * .25) !important;
+}
+.my-2 {
+    margin-top: ($spacer * .5) !important;
+    margin-bottom: ($spacer * .5) !important;
+}
+.my-3 {
+    margin-top: ($spacer * .75) !important;
+    margin-bottom: ($spacer * .75) !important;
+}
+.my-4 {
+    margin-top: ($spacer * 1) !important;
+    margin-bottom: ($spacer * 1) !important;
+}
+.my-5 {
+    margin-top: ($spacer * 1.25) !important;
+    margin-bottom: ($spacer * 1.25) !important;
+}
+
+
+.display-none {
+    display: none;
+}

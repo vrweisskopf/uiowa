@@ -1,11 +1,23 @@
-@import '../../../../node_modules/@angular/material/theming';
+// @use "@angular/material" as mat;
+// @include mat.core();
 
-@include mat-core();
+// @import "./mixins";
+// @import "./custom-palette";
+// @import "./variables";
+// @import "./common";
 
-// $fsl-app-primary: mat-palette($mat-gray);
-// $fsl-app-accent: mat-palette($mat-yellow);
-// $fsl-app-warn: mat-palette($mat-gray);
+// $workspace-primary: mat.define-palette($ui-black);
+// $workspace-accent: mat.define-palette($ui-gold, A200, A100, A400);
+// $workspace-warn: mat.define-palette(mat.$red-palette);
 
-// $fsl-app-theme: mat-light-theme($fsl-app-primary, $fsl-app-accent, $fsl-app-warn);
+// $workspace-theme: mat.mat-light-theme(
+//     (
+//         color: (
+//             primary: $workspace-primary, 
+//             accent: $workspace-accent, 
+//             warn: $workspace-warn
+//         ),
+//     )
+// );
 
-// @include angular-material-theme($fsl-app-theme);
+// @include mat.all-component-themes($workspace-theme);

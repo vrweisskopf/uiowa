@@ -1,14 +1,24 @@
-@import '~@angular/material/theming';
-@include mat-core();
+@use "@angular/material" as mat;
 
+@import "/src/assets/scss/mixins";
+@import "/src/assets/scss/custom-palette";
+@import "/src/assets/scss/variables";
+@import '/src/assets/scss/common';
 
-/* You can add global styles to this file, and also import other style files */
-@import 'assets/scss/mixins';
-@import 'assets/scss/variables';
-@import 'assets/scss/common';
+@include mat.core();
 
-/***** built in themes. *****/
-//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
-//@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~@angular/material/prebuilt-themes/purple-green.css";
+$workspace-app-primary: mat.define-palette($ui-black);
+$workspace-app-accent: mat.define-palette($ui-gold, A200, A100, A400);
+$workspace-app-warn: mat.define-palette(mat.$red-palette);
+
+$workspace-app-theme: mat.define-light-theme(
+    (
+        color: (
+            primary: $workspace-app-primary, 
+            accent: $workspace-app-accent, 
+            warn: $workspace-app-warn
+        ),
+    )
+);
+
+@include mat.all-component-themes($workspace-app-theme);
