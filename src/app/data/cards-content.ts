@@ -17,15 +17,15 @@ export const employeeDates = [
         "key": 'DEPARTMENTAL_ADMIN',
         "label": 'Departmental Admin',
         "helpText": 'Attendance, grade, and midterm submission periods.  Offerings Planner and Course Library deadlines.'
+    },
+    {   
+        "key": 'GRADES_ATTENDANCE',
+        "label": 'Grades and Attendance',
+        "helpText": 'Dates for Faculty and Staff who submit final grades, attendance and midterm class lists.'
+    },
+    {   
+        "key": 'REGISTRATION_ADMIN',
+        "label": 'Registration Admin',
+        "helpText": 'Student Add/Drop, withdraw, prerequisite, early registration and late registration deadlines.  Session creation, set-up, and orientation dates and more.'
     }
-    // {   
-    //     "key": 'GRADES_ATTENDANCE',
-    //     "label": 'Grades and Attendance',
-    //     "helpText": 'Dates for Faculty and Staff who submit final grades, attendance and midterm class lists.'
-    // },
-    // {   
-    //     "key": 'REGISTRATION_ADMIN',
-    //     "label": 'Registration Admin',
-    //     "helpText": 'Student Add/Drop, withdraw, prerequisite, early registration and late registration deadlines.  Session creation, set-up, and orientation dates and more.'
-    // }
 ]
