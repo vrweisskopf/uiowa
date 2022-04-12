@@ -1,1 +1,81 @@
-<p>documentation works!</p>
+<section class="container" fxLayout="column">
+    <h2>Documenation</h2>
+    <h3>Angular</h3>
+    <p>For the basics on setting up a new Angular application, see the set up documentation on angular.io, <a href="https://angular.io/guide/setup-local">https://angular.io/guide/setup-local.</a> </p>
+    
+    <h4 class="mb-0 mt-5"><b>Frontend Technologies</b></h4>
+    <mat-list>
+        <mat-list-item>
+            Node.js - Install from <a href="https://nodejs.org/en/">https://nodejs.org/en/</a>
+        </mat-list-item>
+        <mat-list-item>
+            Angular CLI - Install from <a href="https://cli.angular.io/">https://cli.angular.io/</a>
+        </mat-list-item>
+        <mat-list-item>
+            Angular - Install from <a href="https://angular.io/guide/setup-local">https://angular.io/guide/setup-local</a>
+        </mat-list-item>
+        <mat-list-item>
+            Angular Material - Install from <a href="https://material.angular.io/">https://material.angular.io/</a>
+        </mat-list-item>
+        <mat-list-item>
+            Prettier - <a href="https://prettier.io/">https://prettier.io/</a> 
+        </mat-list-item>
+    </mat-list>
+
+    <h4 class="mb-0 mt-5"><b>Backend Technologies</b></h4>
+    <mat-list>
+        <mat-list-item>
+            LoginToolsConnector.php <br />
+            - Internal, no versioning <br />
+            - Install by copying from an existing application 
+            
+        </mat-list-item>    
+    </mat-list> 
+
+    <h4 class="mb-0 mt-5"><b>Start a New Project</b></h4>
+    <mat-list>
+        <mat-list-item>
+            1. Follow the documentation to install Node.js.  
+        </mat-list-item>
+        <mat-list-item>
+            2. Follow the documentation to install the Angular CLI.  Update your global version to the latest version of the cli before creating the new app. 
+        </mat-list-item>
+        <mat-list-item>
+            3. Follow the command line instruction to create a new application.  It will ask a series of questions about your applications.<br />
+            - ng new app-name --routing <br />
+            - Add Angular Routing? Yes [no longer asks, make sure to use –routing for ng commands]  <br />
+            - Stylesheet format? SCSS 
+        </mat-list-item>
+        <mat-list-item class="mt-5">
+            4. Cd into the newly created project folder. 
+        </mat-list-item>
+        <mat-list-item>
+            5. In the .gitignore file, add package-lock.json.  If package-lock.json is already tracked by git, use git rm --cached package-lock.json after updating .gitignore. 
+        </mat-list-item>
+        <mat-list-item>
+            6. Add eslint to your project: ng add @angular-eslint/schematics 
+        </mat-list-item>
+        <mat-list-item>
+            7. Add Angular Material to your app following the instructions at https://material.angular.io. ng add @angular/material   <br />
+            - Default theme?  Indigo/Pink [it doesn’t matter] OR Custom  <br />
+            - Typography? Yes   <br />
+            - Setup Browser Animations?  Yes 
+        </mat-list-item>
+        <mat-list-item class="mt-5">
+            8. Add Prettier to your application
+        </mat-list-item>
+        <mat-list-item>
+            9. Create a module under shared for all of the material pieces.  Comment them out initially, them add them back in as needed.  To get the list, go to the instructions for one of the components, then to the examples and copy and paste from there.  For example: ng generate module shared\modules\material\ <br />
+            Then go to a component on https://material.angular.io/ and view its examples.  Copy the imports into the module you just created.  Comment them all out and uncomment as needed.  Cleanup code if module is not the right name, etc. 
+        </mat-list-item>
+        <mat-list-item class="mt-5">
+            10. Create your modules, components, services, etc. with the cli: ng generate  TypeOfItem name-of-item             
+        </mat-list-item>
+        <mat-list-item>
+            <p>11. Add a .htaccess file to the project to handle url rewrites. Check &nbsp; <a href="https://angular.io/guide/deployment">https://angular.io/guide/deployment</a> &nbsp; for updates. </p>
+        </mat-list-item>
+        <mat-list-item>
+            12. Make files in src/assets/images and src/assets/css available without needing to use weird relative paths in angular.json.
+        </mat-list-item>
+    </mat-list>
+</section> 
