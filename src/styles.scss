@@ -1,9 +1,9 @@
 @use "@angular/material" as mat;
 
-@import "/src/assets/scss/mixins";
-@import "/src/assets/scss/custom-palette";
-@import "/src/assets/scss/variables";
-@import '/src/assets/scss/common';
+@use './assets/scss/variables';
+@use './assets/scss/mixins';
+@use './assets/scss/common';
+@import './assets/scss/custom-palette';
 
 @include mat.core();
 
@@ -11,14 +11,12 @@ $workspace-app-primary: mat.define-palette($ui-black);
 $workspace-app-accent: mat.define-palette($ui-gold, A200, A100, A400);
 $workspace-app-warn: mat.define-palette(mat.$red-palette);
 
-$workspace-app-theme: mat.define-light-theme(
-    (
-        color: (
-            primary: $workspace-app-primary, 
-            accent: $workspace-app-accent, 
-            warn: $workspace-app-warn
-        ),
+$workspace-app-theme: mat.define-light-theme((
+    color: (
+        primary: $workspace-app-primary, 
+        accent: $workspace-app-accent, 
+        warn: $workspace-app-warn
     )
-);
+));
 
 @include mat.all-component-themes($workspace-app-theme);
